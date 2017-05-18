@@ -1,0 +1,10 @@
+<form ng-submit="$ctrl.addPost()">
+  <p>Title: <input type="text" ng-model="$ctrl.newPost.title"></p>
+  <p>Body: <input type="text" ng-model="$ctrl.newPost.body"></p>
+  <button type="submit">Submit</button>
+</form>
+
+<h3>Post list</h3>
+<ul>
+  <li ng-repeat="post in $ctrl.posts">{{post.title}}</li>
+</ul>
